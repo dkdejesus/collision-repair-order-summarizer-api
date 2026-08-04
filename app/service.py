@@ -41,16 +41,11 @@ class RepairOrderSummaryService:
         fallback = {
             "internal_summary": "Teardown is complete, supplement approval is pending, one received part is staged, and liftgate trim remains backordered.",
             "customer_safe_summary": "Your vehicle is moving through repair planning. We are waiting on one approval and one part before the next production step.",
-            "open_blockers": [
-                        "supplement approval",
-                        "liftgate trim ETA"
-            ],
+            "open_blockers": ["supplement approval", "liftgate trim ETA"],
             "next_action": "Send customer update and follow up with adjuster/vendor.",
-            "redaction_notes": [
-                        "Remove claim numbers, VINs, and adjuster contact details before public demos"
-            ],
-            "confidence": 0.78
-}
+            "redaction_notes": ["Remove claim numbers, VINs, and adjuster contact details before public demos"],
+            "confidence": 0.78,
+        }
         notes = payload.workflow_notes.lower()
         if "missing" in notes or "unknown" in notes or "to validate" in notes:
             fallback["confidence"] = min(float(fallback.get("confidence", 0.65)), 0.76)

@@ -9,7 +9,12 @@ from fastapi.responses import JSONResponse
 from app.config import get_settings
 from app.logging_config import configure_logging
 from app.repository import RepairOrderSummaryRepository
-from app.schemas import RepairOrderSummaryListResponse, RepairOrderSummaryRequest, RepairOrderSummaryResponse, StoredRepairOrderSummary
+from app.schemas import (
+    RepairOrderSummaryListResponse,
+    RepairOrderSummaryRequest,
+    RepairOrderSummaryResponse,
+    StoredRepairOrderSummary,
+)
 from app.service import RepairOrderSummaryService
 
 settings = get_settings()

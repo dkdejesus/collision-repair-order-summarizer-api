@@ -3,7 +3,12 @@ import sqlite3
 from datetime import UTC, datetime
 from pathlib import Path
 
-from app.schemas import RepairOrderSummaryAssessment, RepairOrderSummaryRequest, StoredRepairOrderSummary, StoredRepairOrderSummarySummary
+from app.schemas import (
+    RepairOrderSummaryAssessment,
+    RepairOrderSummaryRequest,
+    StoredRepairOrderSummary,
+    StoredRepairOrderSummarySummary,
+)
 
 
 class RepairOrderSummaryRepository:
