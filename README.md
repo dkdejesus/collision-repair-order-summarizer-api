@@ -7,7 +7,7 @@ A deployable FastAPI service for Precision Auto Body's **Repair-order summarizer
 ## Portfolio Status
 
 - Local validation: complete
-- GitHub remote: pending re-authentication and publish
+- GitHub remote: published at https://github.com/dkdejesus/collision-repair-order-summarizer-api
 - Railway deployment: pending dashboard deployment
 - Demo data policy: synthetic only
 
